@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POEN - Partido da Ordem Evolutiva Nacional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--verde:#0F4F16;
+--azul:#00307D;
+--dourado:#D9A315;
+--branco:#ffffff;
+--cinza:#f4f6f8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:var(--cinza);
+color:#030303;
+}
+
+/* MENU */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#00307D;
+border-bottom:4px solid #D9A315;
+padding:15px;
+z-index:1000;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#D9A315;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#0F4F16,#00307D);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.logo{
+width:250px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:5rem;
+color:#D9A315;
+text-shadow:0 0 20px rgba(217,163,21,.5);
+}
+
+.hero p{
+font-size:1.3rem;
+margin-top:10px;
+}
+
+.slogan{
+color:#D9A315;
+font-weight:bold;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#D9A315;
+color:#00307D;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+/* CONTAINER */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:60px 0;
+}
+
+section{
+background:white;
+padding:35px;
+margin-bottom:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+h2{
+color:#00307D;
+border-left:8px solid #D9A315;
+padding-left:15px;
+margin-bottom:20px;
+}
+
+h2::after{
+content:"";
+display:block;
+width:100px;
+height:4px;
+background:#D9A315;
+margin-top:8px;
+}
+
+p{
+line-height:1.8;
+}
+
+ul{
+margin-left:25px;
+line-height:2;
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+border-top:8px solid #D9A315;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#00307D;
+margin-bottom:10px;
+}
+
+/* FILIAÇÃO */
+
+.formulario{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.formulario input,
+.formulario textarea{
+padding:14px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+.formulario button{
+background:#0F4F16;
+color:white;
+border:none;
+padding:15px;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.formulario button:hover{
+background:#00307D;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+}
+
+/* FOOTER */
+
+footer{
+background:#00307D;
+border-top:5px solid #D9A315;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:3rem;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#quem">Quem Somos</a>
+<a href="#manifesto">Manifesto</a>
+<a href="#valores">Valores</a>
+<a href="#propostas">Propostas</a>
+<a href="#noticias">Notícias</a>
+<a href="#filiacao">Filiação</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<!-- TROQUE PELO NOME DA SUA LOGO -->
+<img src="ok.jpg" width="400" height="500">>
+
+<h1>POEN</h1>
+
+<p>Partido da Ordem Evolutiva Nacional</p>
+
+<p class="slogan">
+Ordem • Desenvolvimento • Responsabilidade
+</p>
+
+<a href="#propostas" class="btn">
+Conheça Nossas Propostas
+</a>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<section id="quem">
+
+<h2>Quem Somos</h2>
+
+<p>
+O Partido da Ordem Evolutiva Nacional (POEN) busca promover o desenvolvimento do Brasil por meio da responsabilidade pública, da educação, da inovação e da segurança para todos os cidadãos.
+</p>
+
+</section>
+
+<section id="manifesto">
+
+<h2>Manifesto do POEN</h2>
+
+<p>
+Acreditamos em um Brasil forte, moderno e preparado para o futuro. Defendemos instituições sólidas, crescimento econômico sustentável, oportunidades para todos e uma gestão pública eficiente e transparente.
+</p>
+
+</section>
+
+<section id="valores">
+
+<h2>Nossos Valores</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3> Ordem</h3>
+<p>Respeito às leis e às instituições democráticas.</p>
+</div>
+
+<div class="card">
+<h3> Responsabilidade</h3>
+<p>Compromisso com uma gestão pública eficiente.</p>
+</div>
+
+<div class="card">
+<h3> Desenvolvimento</h3>
+<p>Incentivo ao crescimento econômico e à inovação.</p>
+</div>
+
+<div class="card">
+<h3> Educação</h3>
+<p>Valorização do ensino e da qualificação profissional.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="propostas">
+
+<h2>Principais Propostas</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3> Segurança Pública</h3>
+<p>Modernização das forças de segurança e combate ao crime organizado.</p>
+</div>
+
+<div class="card">
+<h3> Educação</h3>
+<p>Expansão do ensino técnico e incentivo à tecnologia.</p>
+</div>
+
+<div class="card">
+<h3> Economia</h3>
+<p>Redução da burocracia e incentivo ao empreendedorismo.</p>
+</div>
+
+<div class="card">
+<h3> Saúde</h3>
+<p>Melhoria da gestão e ampliação do acesso aos serviços.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="noticias">
+
+<h2>Últimas Notícias</h2>
+
+<div class="card">
+<h3>Encontro Nacional</h3>
+<p>Debates sobre educação, inovação e desenvolvimento econômico.</p>
+</div>
+
+<br>
+
+<div class="card">
+<h3>Novas Propostas</h3>
+<p>Apresentação de medidas voltadas à geração de empregos e modernização do Estado.</p>
+</div>
+
+</section>
+
+<section id="filiacao">
+
+<h2>Filie-se ao POEN</h2>
+
+<form
+action="https://formsubmit.co/SEUEMAIL@gmail.com"
+method="POST"
+class="formulario">
+
+<input type="text" name="nome" placeholder="Nome Completo" required>
+
+<input type="email" name="email" placeholder="E-mail" required>
+
+<input type="tel" name="telefone" placeholder="Telefone" required>
+
+<input type="text" name="cidade" placeholder="Cidade">
+
+<textarea name="mensagem" rows="5" placeholder="Por que deseja se filiar?"></textarea>
+
+<button type="submit">
+Solicitar Filiação
+</button>
+
+</form>
+
+</section>
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<p><strong>Email:</strong> partidopoen27@gmail.com</p>
+<p><strong>Instagram:</strong> @partidopoen27@gmail.com</p>
+<p><strong>Telefone:</strong> (11) 99999-9999</p>
+
+</section>
+
+</div>
+
+<a href="https://wa.me/5511999999999" class="whatsapp">
+💬
+</a>
+
+<footer>
+
+<p>
+© 2026 POEN - Partido da Ordem Evolutiva Nacional
+</p>
+
+</footer>
+
+</body>
+</html>
